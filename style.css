@@ -34,7 +34,7 @@ body {
 }
 
 .hello h1{
-    color: rgb(53, 136, 27);
+    color: #00ff00;
     font-size: 3.5rem;
     padding: 2%;
 }
@@ -111,6 +111,47 @@ body {
     border-radius: 10px;
     text-align: center;
     width: 30%;
+}
+
+.skills h2{
+    font-size: 2.7rem;
+    font-weight: 750;
+    text-decoration: none;
+    margin-bottom: 20px;
+    color: #00ff00;
+    text-align: center;
+}
+
+.skills-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 30px;
+    background-color: #1f1f1f;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 150px;
+    text-align: center;
+}
+
+.skill img {
+    width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.skill p {
+    margin-top: 5px;
+    font-size: 18px;
+    color: #eee;
 }
 
 .projects h2{
