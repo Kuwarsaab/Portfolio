@@ -209,28 +209,15 @@ body {
     margin-left: 25px;
 }
 
-.footer-links{
+.footer{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 2%;
-}
-
-.footer-links a{
-    font-size: 1.10rem;
-    text-decoration: none;
-    color:aliceblue;
-    padding: 2% 0;
-}
-
-.footer h2{
+    margin-top: 30px;
     justify-content: space-around;
     align-items: center;
 }
 
 .footer-social{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 2%;
+    justify-content: space-between;
+    gap: 20px;
 }
