@@ -68,6 +68,12 @@ body {
     height: 15%;
 }
 
+.image img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
 .image h2{
     font-size: 1.9rem;
     font-weight: 750;
@@ -80,6 +86,30 @@ body {
     color: #ffffff;
     font-size: 0.9rem;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.resume{
+    padding: 8px 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #00ff88;
+    color: #000000;
+    font-size: 0.8rem;
+    font-weight: 750;
+    text-decoration: none;
+}
+
+.resume a{
+    color: #000000;
+    text-decoration: none;
+}
+
+.resume:hover{
+    background-color: #00ff77;
+    color: #f0f0f0;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 .image .connect a{
@@ -134,7 +164,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 50px 0;
+    margin: 40px 0;
+    padding: 2% 0;
 }
 
 .skills h2{
@@ -151,7 +182,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     gap: 80px;
-    margin-top: 30px;
+    /* margin-top: 30px; */
     background-color: #1f1f1f;
     padding: 2% 0;
     border-radius: 10px;
@@ -210,13 +241,14 @@ body {
     text-decoration: none;
     margin-bottom: 20px;
     color: #00ff88;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .project-details p{
-    color: #ffffff;
+    color: #ffffffcc;
     font-size: 0.9rem;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
 }
 
 .project-details {
@@ -265,6 +297,7 @@ body {
     border-radius: 5px;
     border: 1px solid #ffffff;
     background-color: #1f1f1f;
+    color: #ffffff;
 }
 
 .form textarea{
@@ -274,6 +307,7 @@ body {
     border-radius: 5px;
     border: 1px solid #ffffff;
     background-color: #1f1f1f;
+    color: #ffffff;
 }
 
 .form button{
@@ -287,6 +321,25 @@ body {
     color: #000000;
     font-size: 1.2rem;
     font-weight: 750;
+}
+
+  /* Hover Effects */
+.form button:hover {
+    background-color: #00ff77;
+    color: #f0f0f0;
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.success-message {
+    display: none;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
 }
 
 .button-area{
@@ -305,6 +358,12 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+}
+
+.footer-social img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
 }
 
 #loader{
