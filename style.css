@@ -446,17 +446,6 @@ body {
         font-size: 1rem;
     }
 
-
-    /* .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar a {
-        margin-left: 0;
-        margin-top: 10px;
-    } */
-
     .image {
         flex-direction: column;
         align-items: center;
@@ -540,6 +529,18 @@ body {
 
     .form {
         width: 100%;
+    }
+
+    .form input {
+        width: 92%;
+    }
+
+    .form textarea {
+        width: 92%;
+    }
+
+    .form button {
+        width: 89%;
     }
 
     .footer {
