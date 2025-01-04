@@ -426,3 +426,105 @@ body {
         font-size: 9vw;
     }
 }
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .image {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image img {
+        width: 30%;
+        height: 30%;
+    }
+
+    .image #home {
+        width: 40%;
+        height: 40%;
+    }
+
+    .image h2 {
+        font-size: 1.5rem;
+    }
+
+    .image .bio p {
+        font-size: 0.8rem;
+    }
+
+    .work {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work .box {
+        width: 80%;
+    }
+
+    .skills-grid {
+        gap: 20px;
+    }
+
+    .skill img {
+        width: 60px;
+    }
+
+    .skill p {
+        font-size: 14px;
+    }
+
+    .projects {
+        padding: 0;
+    }
+
+    .project {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project img {
+        width: 80%;
+    }
+
+    .project-details {
+        width: 80%;
+    }
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-social {
+        gap: 10px;
+    }
+
+    .footer-social img {
+        width: 30px;
+        height: 30px;
+    }
+}
