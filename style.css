@@ -429,6 +429,25 @@ body {
 
 @media (max-width: 768px) {
     .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .navbar a {
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .navbar h2 {
+        font-size: 1.5rem;
+    }
+
+    .navbar a {
+        font-size: 1rem;
+    }
+
+
+    /* .navbar {
         flex-direction: column;
         align-items: center;
     }
@@ -436,7 +455,7 @@ body {
     .navbar a {
         margin-left: 0;
         margin-top: 10px;
-    }
+    } */
 
     .image {
         flex-direction: column;
@@ -466,8 +485,13 @@ body {
         align-items: center;
     }
 
+    .work .hero {
+        align-items: center;
+    }
+
     .work .box {
         width: 80%;
+        margin-bottom: 15px;
     }
 
     .skills-grid {
@@ -508,6 +532,10 @@ body {
         flex-direction: column;
         align-items: center;
         width: 90%;
+    }
+
+    .content img{
+        display: none;
     }
 
     .form {
