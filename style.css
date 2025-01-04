@@ -22,19 +22,30 @@ body {
     font-size: 1.9rem;
     font-weight: 750;
     text-decoration: none;
-    color: #00ff00;
+    color: #00ff88;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
 .navbar a{
     margin-left: 3rem;
     font-size: 1.10rem;
+    font-weight: 600;
     text-decoration: none;
     color:aliceblue;
 }
 
+.navbar a:hover{
+    color: #00ff88;
+}
+
 .hello h1{
-    color: #00ff00;
+    color: #ffffff;
+    font-size: 3.2rem;
+    padding: 2%;
+}
+
+.hello span{
+    color: #00ff88;
     font-size: 3.5rem;
     padding: 2%;
 }
@@ -90,7 +101,7 @@ body {
     font-weight: 750;
     text-decoration: none;
     margin-bottom: 20px;
-    color: #00ff00;
+    color: #00ff88;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -102,7 +113,7 @@ body {
 
 .work .box h2{
     margin-bottom: 20px;
-    color: #00ff00;
+    color: #00ff88;
 }
 
 .box{
@@ -118,7 +129,7 @@ body {
     font-weight: 750;
     text-decoration: none;
     margin-bottom: 20px;
-    color: #00ff00;
+    color: #00ff88;
     text-align: center;
 }
 
@@ -160,7 +171,7 @@ body {
     font-weight: 750;
     text-decoration: none;
     margin-bottom: 20px;
-    color: #00ff00;
+    color: #00ff88;
     text-align: center;
 }
 
@@ -181,7 +192,7 @@ body {
     font-weight: 750;
     text-decoration: none;
     margin-bottom: 20px;
-    color: #00ff00;
+    color: #00ff88;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
@@ -219,7 +230,7 @@ body {
     font-weight: 750;
     text-decoration: none;
     margin-bottom: 20px;
-    color: #00ff00;
+    color: #00ff88;
     text-align: center;
 }
 
@@ -255,7 +266,7 @@ body {
     margin-bottom: 10px;
     border-radius: 5px;
     border: none;
-    background-color: #00ff00;
+    background-color: #00ff88;
     color: #000000;
     font-size: 1.2rem;
     font-weight: 750;
@@ -277,4 +288,57 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 20px;
+}
+
+#loader{
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    transition: all ease 0.7s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#loader h1{
+    font-size: 4vw;
+    color: transparent;
+    background: linear-gradient(to right,#00cc66,#00ff22);
+    -webkit-background-clip: text;
+    position: absolute;
+    opacity: 0;
+    animation-name: load;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-timing-function: linear;
+}
+#loader h1:nth-child(2){
+    animation-delay: 2s;
+}
+#loader h1:nth-child(3){
+    animation-delay: 3s;
+}
+
+@keyframes load {
+    0%{
+        opacity: 0;
+    }
+    10%{
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+@media (max-width:600px) {
+    #loader h1{
+        font-size: 9vw;
+    }
 }
