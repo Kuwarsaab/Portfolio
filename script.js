@@ -1,20 +1,37 @@
-document.getElementById('contact-form').addEventListener('submit', (e) => {
-    e.preventDefault();
-    sendEmail(e.target);
-  });
+(function() {
+  // Initialize EmailJS with the public key
+  emailjs.init("h9CaHHphd5WNUeG1P");
+})();
 
-import emailjs from 'emailjs-com';
+// Add event listener for form submission
+function sendEmail(event) {
+  event.preventDefault(); // Prevent default form submission
+  // if (!window.env) { // Ensure 'env' variable is set, or remove this check
+  //     console.error('Environment variables not loaded.');
+  //     return;
+  // }
+  emailjs.sendForm('service_pogs0ro', 'template_r3qxzws', event.target)
+      .then(() => {
+          // Show success message
+          const successMessage = document.getElementById('success-message');
+          successMessage.style.display = 'block'; // Show the success message
 
-const sendEmail = (form) => {
-  emailjs.sendForm('service_pogs0ro', 'template_r3qxzws', form, 'h9CaHHphd5WNUeG1P')
-    .then((result) => {
-      console.log('Email successfully sent!', result.text);
-    })
-    .catch((error) => {
-      console.error('Error sending email:', error);
-    });
-};
+          // Reset the form fields
+          event.target.reset();
 
+          // Hide the success message after 1 second
+          setTimeout(() => {
+              successMessage.style.display = 'none'; // Hide the success message
+          }, 1000); // 1 second
+      }, (error) => {
+          console.log('FAILED...', error);
+      });
+}
+
+// Attach the submit event listener directly to the form
+document.getElementById('contact-form').addEventListener('submit', sendEmail);
+
+// Loader Animation
 function loaderAnimation() {
   var loader = document.querySelector("#loader")
   setTimeout(function () {
