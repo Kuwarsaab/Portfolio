@@ -38,6 +38,15 @@ body {
     color: #00ff88;
 }
 
+.menu-toggle {
+    display: none;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
+
 .hello h1{
     color: #ffffff;
     font-size: 3.2rem;
@@ -132,7 +141,7 @@ body {
 .work{
     display: flex;
     justify-content: space-around;
-    margin: 50px 0;
+    padding: 2% 0;
 }
 
 .work h2{
@@ -167,7 +176,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 40px 0;
     padding: 2% 0;
 }
 
@@ -184,8 +192,7 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 80px;
-    /* margin-top: 30px; */
+    gap: 90px;
     background-color: #1f1f1f;
     padding: 2% 0;
     border-radius: 10px;
@@ -202,8 +209,13 @@ body {
 .skill img {
     width: 80px;
     height: auto;
+    padding-top: 15px;
     margin-bottom: 10px;
     transition: transform 0.3s ease;
+}
+
+.skill:hover img {
+    transform: scale(1.1);
 }
 
 .skill p {
@@ -263,7 +275,7 @@ body {
 
 .contact{
     justify-content: center;
-    margin: 50px 0;
+    padding: 2% 0;
 }
 
 .content{
@@ -429,12 +441,32 @@ body {
 
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column;
+        flex-direction: row;
         justify-content: space-between;
     }
 
     .navbar h2 {
         font-size: 1.8rem;
+    }
+
+    .links {
+        display: none;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: #444;
+        position: absolute;
+        top: 4rem;
+        right: 1rem;
+        padding: 1rem;
+        border-radius: 8px;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
     }
 
     .hello h1 {
@@ -483,12 +515,6 @@ body {
         margin: 0 35%;
     }
 
-    .resume:hover {
-        transform: scale(1.1);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-    }
-
     .connect h2 {
         font-size: 1.5rem;
         text-align: center;
@@ -502,12 +528,6 @@ body {
     .connect img {
         width: 30px;
         height: 30px;
-    }
-
-    .connect img:hover {
-        transform: scale(1.1);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
     }
 
     .work {
@@ -534,6 +554,10 @@ body {
         margin-bottom: 15px;
     }
 
+    .skills {
+        padding: 2% 0;
+    }
+
     .skills h2 {
         font-size: 1.5rem;
     }
@@ -546,16 +570,12 @@ body {
         width: 60px;
     }
 
-    .skill:hover img {
-        transform: scale(1.1);
-    }
-
     .skill p {
         font-size: 14px;
     }
 
     .projects {
-        padding: 0;
+        padding: 2% 0;
     }
 
     .projects h2 {
@@ -583,6 +603,7 @@ body {
     .contact {
         flex-direction: column;
         align-items: center;
+        padding: 2% 0;
     }
 
     .contact h2 {
@@ -615,12 +636,6 @@ body {
         width: 89%;
     }
 
-    .form button:hover {
-        transform: scale(1.1);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
-    }
-
     .footer {
         flex-direction: column;
         align-items: center;
@@ -633,11 +648,5 @@ body {
     .footer-social img {
         width: 30px;
         height: 30px;
-    }
-
-    .footer-social img:hover {
-        transform: scale(1.1);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        cursor: pointer;
     }
 }
