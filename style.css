@@ -469,6 +469,10 @@ body {
         display: block;
     }
 
+    .hello {
+        padding: 2% 0;
+    }
+
     .hello h1 {
         font-size: 1.6rem;
     }
@@ -480,6 +484,7 @@ body {
     .image {
         flex-direction: column;
         align-items: center;
+        padding: 2% 0;
     }
 
     .image img {

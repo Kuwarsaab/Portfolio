@@ -41,3 +41,10 @@ function loaderAnimation() {
 }
 
 loaderAnimation()
+
+const menuToggle = document.querySelector('.menu-toggle');
+const links = document.querySelector('.links');
+
+menuToggle.addEventListener('click', () => {
+    links.classList.toggle('active');
+});
