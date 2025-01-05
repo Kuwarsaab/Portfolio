@@ -234,7 +234,7 @@ body {
 
 .project img {
     width: 200px;
-    height: auto;
+    height: 210px;
     border-radius: 10px;
 }
 
@@ -429,21 +429,20 @@ body {
 
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-between;
     }
 
-    .navbar a {
-        margin-left: 0;
-        margin-top: 0;
-    }
-
     .navbar h2 {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
-    .navbar a {
-        font-size: 1rem;
+    .hello h1 {
+        font-size: 1.6rem;
+    }
+
+    .hello span {
+        font-size: 2rem;
     }
 
     .image {
@@ -469,6 +468,48 @@ body {
         font-size: 0.8rem;
     }
 
+    .bio h2{
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .bio p{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .resume{
+        font-size: 0.8rem;
+        margin: 0 35%;
+    }
+
+    .resume:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+
+    .connect h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .connect a {
+        font-size: 0.8rem;
+        justify-content: center;
+    }
+
+    .connect img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .connect img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+
     .work {
         flex-direction: column;
         align-items: center;
@@ -478,17 +519,35 @@ body {
         align-items: center;
     }
 
+    .hero h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .hero p {
+        font-size: 0.8rem;
+        text-align: justify;
+    }
+
     .work .box {
         width: 80%;
         margin-bottom: 15px;
     }
 
+    .skills h2 {
+        font-size: 1.5rem;
+    }
+
     .skills-grid {
-        gap: 20px;
+        gap: 30px;
     }
 
     .skill img {
         width: 60px;
+    }
+
+    .skill:hover img {
+        transform: scale(1.1);
     }
 
     .skill p {
@@ -497,6 +556,10 @@ body {
 
     .projects {
         padding: 0;
+    }
+
+    .projects h2 {
+        font-size: 1.5rem;
     }
 
     .project {
@@ -512,9 +575,18 @@ body {
         width: 80%;
     }
 
+    .project-details h3 {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
     .contact {
         flex-direction: column;
         align-items: center;
+    }
+
+    .contact h2 {
+        font-size: 1.5rem;
     }
 
     .content {
@@ -543,6 +615,12 @@ body {
         width: 89%;
     }
 
+    .form button:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
+    }
+
     .footer {
         flex-direction: column;
         align-items: center;
@@ -555,5 +633,11 @@ body {
     .footer-social img {
         width: 30px;
         height: 30px;
+    }
+
+    .footer-social img:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        cursor: pointer;
     }
 }
